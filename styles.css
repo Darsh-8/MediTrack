@@ -10,6 +10,7 @@
   --c-gray-300: #bdbbb7;
   --c-gray-200: #f1f1f1;
   --c-gray-100: #ffffff;
+  --c-graywhite: #666;
   --c-green-500: #45ffbc;
   --c-olive-500: #e3ffa8;
   --c-white: var(--c-gray-100);
@@ -803,16 +804,20 @@ button:focus {
 
 .btn {
   background-color: var(--c-green-500);
-  color: var(--c-gray-100);
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
+  color: var(--c-gray-900);
+  padding: 0.7rem 1.3rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: 1px solid var(--c-green-500);
+  border-radius: 0.5rem;
   cursor: pointer;
+  transition: 0.25s ease;
 }
 
 .btn:hover {
-  background-color: var(--c-green-600);
+  background-color: var(--c-gray-800);
+  border: 1px solid var(--c-green-500);
+  color: var(--c-green-500);
 }
 
 .login-footer {
@@ -889,20 +894,6 @@ button:focus {
   margin-top: 0.5rem;
 }
 
-.btn {
-  background-color: var(--c-green-500);
-  color: var(--c-gray-100);
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: var(--c-green-600);
-}
-
 .signup-footer {
   text-align: center;
   margin-top: 2rem;
@@ -921,4 +912,75 @@ button:focus {
 
 .signin-link:hover {
   color: var(--c-green-600);
+}
+
+.for-btn{
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: var(--c-olive-500);
+  color: var(--c-gray-900);
+  border-radius: 0.5rem;
+  /* padding: 14px 24px 16px; */
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  transition: transform 200ms,background 200ms;
+  margin-top: 2rem;
+}
+
+.for-btn:hover{
+  transform: translateY(-2px);
+}
+
+.for-btn:focus-within {
+  box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--c-olive-500);
+}
+
+.for-drop{
+  appearance: none;
+  width: 100%;
+  font-size: 1.15rem;
+  padding: 0.675em 6em 0.675em 1em;
+  background-color: var(--c-gray-700);
+  border: 1px solid var(--c-olive-500);
+  border-radius: 1rem;
+  color: var(--c-olive-500);
+  cursor: pointer;
+}
+
+.for-drop:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: rgb(100, 153, 255);
+}
+
+.content-container {
+  display: flex;
+  margin: 5rem 3rem;
+}
+.left-side {
+  flex: 1;
+  padding-right: 20px;
+}
+.right-side {
+  flex: 3;
+  margin-left: 2rem;
+}
+.dropdown {
+  width: 100%;
+}
+
+/* Placeholder for right-side content */
+.right-side-content {
+  background-color: var(--c-gray-700);
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  border-radius: 1rem;
+  color: var(--c-graywhite);
 }

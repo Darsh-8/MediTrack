@@ -5,40 +5,6 @@
   <title>MedInnov - Login</title>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .content-container {
-      display: flex;
-      margin-top: 20px;
-    }
-    .left-side {
-      flex: 1;
-      padding-right: 20px;
-    }
-    .right-side {
-      flex: 2;
-    }
-    .dropdown {
-      width: 100%;
-    }
-    select {
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      background-color: #fff;
-    }
-    /* Placeholder for right-side content */
-    .right-side-content {
-      background-color: #f0f0f0;
-      height: 200px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-style: italic;
-      color: #666;
-    }
-  </style>
 </head>
 <body>
 
@@ -74,31 +40,24 @@
                     </div>
             </div>    
 
-<div class="app">
-  <div class="login-container">
-    
-  </div>
-  
-  <div class="content-container">
-    <div class="left-side">
-      <div class="dropdown">
-        <select>
-          <option value="" disabled selected>Select an option</option>
-          <option value="one">Expired</option>
-          <option value="two">Contaminated</option>
-        </select>
-        <button type="submit" class="for_btn">Forecast</button>
-        </select>
-      </div>
-    </div>
-    <div class="right-side">
-      <div class="right-side-content">
-        Space for other graphics
-      </div>
-    </div>
-  </div>
-  
-</div>
+            <div class="content-container">
+              <div class="left-side">
+                <div class="dropdown">
+                  <select class="for-drop">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="one">Expired</option>
+                    <option value="two">Contaminated</option>
+                  </select>
+                  <button type="submit" class="for-btn">Forecast</button>
+                  </select>
+                </div>
+              </div>
+              <div class="right-side">
+                <div class="right-side-content">
+                  Space for other graphics
+                </div>
+              </div>
+            </div>
 <script src='https://unpkg.com/phosphor-icons'></script>
 <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
