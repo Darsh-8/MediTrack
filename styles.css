@@ -318,12 +318,13 @@ a {
 }
 
 .tiles {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(6, 5fr);
   -moz-column-gap: 1rem;
        column-gap: 1rem;
   row-gap: 1rem;
   margin-top: 1.25rem;
+  justify-content: space-between;
 }
 @media (max-width: 700px) {
   .tiles {
@@ -332,8 +333,9 @@ a {
 }
 
 .tile {
+  flex: 1;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   background-color: var(--c-olive-500);
   color: var(--c-gray-900);
   min-height: 200px;
@@ -360,6 +362,12 @@ a {
 }
 .tile:nth-child(3):focus-within {
   box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--c-gray-300);
+}
+.tile:nth-child(4) {
+  background-color: var(--c-green-500);
+}
+.tile:nth-child(4):focus-within {
+  box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--c-green-500);
 }
 .tile a {
   text-decoration: none;
