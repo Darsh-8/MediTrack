@@ -116,6 +116,7 @@ a {
   min-height: 80vh;
   width: 95%;
   max-width: 1600px;
+  border-radius: 1rem;
   background-color: var(--c-gray-800);
   padding: 2vw 4vw 6vw;
   display: flex;
