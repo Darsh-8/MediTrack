@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Make a Login Page</title>
+  <meta charset="UTF-8">
+  <title>MedInnov - Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+<div class="app">
+  <div class="login-container">
+    <div class="login-header">
+      <h2>Login to MedInnov</h2>
+      <p>Welcome back! Please login to access your account.</p>
+    </div>
+    <form class="login-form">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <div class="login-footer">
+      <p>Don't have an account? <a href="./signup.html">Sign up</a></p>
+      <p><a href="#">Forgot password?</a></p>
+    </div>
+  </div>
+</div>
+<script src='https://unpkg.com/phosphor-icons'></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
